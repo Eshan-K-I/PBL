@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PetHealth</title>
+    <script src="https://www.jsdelivr.com/package/npm/pdfjs-dist" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+	<link href="panels.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+  <script>$(document).ready(function(){
+  $("#flipone").click(function(){
+    $("#panelone").slideToggle("medium");
+  });
+});</script>
+<script>$(document).ready(function(){
+  $("#fliptwo").click(function(){
+    $("#paneltwo").slideToggle("medium");
+  });
+});</script>
+<script>$(document).ready(function(){
+  $("#flipthree").click(function(){
+    $("#panelthree").slideToggle("medium");
+  });
+});</script>
+<script>$(document).ready(function(){
+  $("#flipfour").click(function(){
+    $("#panelfour").slideToggle("medium");
+  });
+});</script>
+<script>$(document).ready(function(){
+  $("#flipfive").click(function(){
+    $("#panelfive").slideToggle("medium");
+  });
+});</script>
+<script>$(document).ready(function(){
+  $("#flipsix").click(function(){
+    $("#panelsix").slideToggle("medium");
+  });
+});</script>
+    <nav class="navbar sticky-top bg-body-tertiary navbar-expand-md">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html" style="font-size: 27.5px;">
+      <img src="logo.svg" alt="Logo" width="45" height="35" class="d-inline-block align-text-top">
+	  PetHealth 
+    </a>
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+	    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+		<li class="nav-item"><a href="more_info.html" class="nav-link" aria-current="page">More Info</a></li>
+		<li class="nav-item"><a href="purchase.html" class="nav-link active	" aria-current="page">Purchase</a></li>
+		<li class="nav-item"><a href="about_us.html" class="nav-link" aria-current="page">About Us</a></li>
+      </ul>
+	  </div>
+  </div>
+	</nav>
+		<div class=" p-5 bg-secondary text-white">
+	<h1 class="fs-1">Purchase <b>(Price in USD)</b></h1>
+	<p>Links to purchase PetHealth's SmartCollar with current information about stock and price.</p>
+	</div>
+	<div style="margin: 15px;">
+	<div class="text-center">
+  <div class="row">
+    <div class="col">
+          <div id="flipone" style="font-size: 1.5rem"><b>Amazon</b></div>
+	<div id="panelone" style="font-size: 1.2rem">The current stock at Amazon is <b>13</b>, the price is...<p style="color: #85bb65; font-size: 1.75rem;"><a href="purchase_complete.html">$113.84</a></p></div>
+    </div>
+    <div class="col">
+                <div id="fliptwo" style="font-size: 1.5rem"><b>Ebay</b></div>
+	<div id="paneltwo" style="font-size: 1.2rem">The current stock at Ebay is <b>27</b>, the price is...<p style="color: #85bb65; font-size: 1.75rem;"><a href="purchase_complete.html">$115.21</a></p></div>
+    </div>
+    <div class="col">
+        <div id="flipthree" style="font-size: 1.5rem"><b>Newegg</b></div>
+	<div id="panelthree" style="font-size: 1.2rem">The current stock at Newegg is <b>8</b> <p style="color: #85bb65; font-size: 1.75rem;"><a href="purchase_complete.html">$114.32</a></p></div>
+    </div>
+  </div>
+</div>
+	<br>
+	<br>
+	<br>
+	<div class="text-center">
+  <div class="row">
+    <div class="col">
+          <div id="flipfour" style="font-size: 1.5rem"><b>CDW</b></div>
+	<div id="panelfour" style="font-size: 1.2rem">The current stock at CDW is <b>37</b>, the price is...<p style="color: #85bb65; font-size: 1.75rem;"><a href="purchase_complete.html">$123.39</a></p></div>
+    </div>
+    <div class="col">
+                <div id="flipfive" style="font-size: 1.5rem"><b>TigerDirect</b></div>
+	<div id="panelfive" style="font-size: 1.2rem">The current stock at TigetDirect is <b>19</b>, the price is...<p style="color: #85bb65; font-size: 1.75rem;"><a href="purchase_complete.html">$115.35</a></p></div>
+    </div>
+    <div class="col">
+        <div id="flipsix" style="font-size: 1.5rem"><b>MicroCenter</b></div>
+	<div id="panelsix" style="font-size: 1.2rem">The current stock at MicroCenter is <b>8</b>, the price is.. <p style="color: #85bb65; font-size: 1.75rem;"><a href="purchase_complete.html">$109.32</a></p></div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
+
+<!--Additional stores for panels could be CDW, TigerDirect and MicroCenter	-->
